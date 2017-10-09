@@ -54,19 +54,46 @@ $about = [
      * <em> ... </em> курсив
      */
     //ТЕКСТ КОТОРЫЙ НАХОДИТСЯ СЛЕВА
-    "left-text" => "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "left-text" => "Горад: Менск (Беларусь)<br />
+Стылі&nbsp;(умоўна): фанк, рок, джаз, фольк<br />
+Мова выканання: беларуская, руская<br />
+Рэпертуар: больш за 30 арыгінальных аўтарскіх кампазіцыяў +&nbsp;кавер-вэрсіі&nbsp;знакамітых выканаўцаў<br />",
 
     //ТЕКСТ КОТОРЫЙ НАХОДИТСЯ СПРАВА
-    "right-text" => "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "right-text" => "Патрэбныя нам планеты выстраіліся ў рад адзінаццатага чысла адзінаццатага месяца дзве тысячы адзінаццатага года - з той пары і павялося: натхнёная сумесная творчасць, эксперыменты, гарачыя спрэчкі, адмысловыя і ня вельмі імпровізы на рэпетыцыях, камічныя і дасціпныя экспромты на выступленнях. Пошукі барабаншчыка, пошукі гука, пошукі назвы, пошукі месца, пошукі-пошукі-пошукі...",
 
     //ПОЛНЫЙ ТЕКСТ КОТОРЫЙ ОТОБРАЖАЕТСЯ ВО ВСПЛЫВАЮЩЕМ ОКНЕ
-    "full-text" => "Lorem ipsum dolor sit amet, eu antiopam incorrupte cum. Sed probo habeo erroribus ei, choro scripta ex qui, oblique inimicus conceptam eam ut. At ludus maiorum propriae ius, eum ei quodsi mandamus mediocritatem. Vis quot idque dicta ei.
-<br/><br/>
-Expetenda patrioque ei est. An prima impetus sanctus duo, qui movet solet option id. Eu vivendo gubergren per, nisl viderer mandamus his no. Quo alia equidem consulatu ut, falli similique neglegentur an vel. Ea facer eripuit repudiandae pro, movet dolorem admodum ex mei. Quo nemore tibique disputationi an, esse comprehensam per cu.
-<br/><br/>
-Suas moderatius elaboraret per in. Cu mei quod deleniti, vide intellegat efficiantur eu eum, sed quis definiebas ea. Id usu dolor tantas, has ut regione apeirian, duis delicata at mei. Liber postea percipitur pro te. Vel molestie platonem deseruisse et, torquatos expetendis honestatis mel eu, his definiebas vituperata cu. Mel exerci adversarium in. Duo saperet graecis delectus id, usu affert virtute voluptaria te, legere vivendo pertinacia usu ei.
-<br/><br/>
-Vis probo scripta consulatu te, ut nam idque mediocrem. Nam iudico civibus ei, facer volutpat est no. Et tantas intellegat scriptorem vix, quodsi persius mel ad. Oblique sapientem sententiae no mei.
-<br/><br/>
-Case harum gubergren vix no. Te dicit libris sit, te equidem deserunt sea, et nec eripuit splendide. Eu sed eius feugiat albucius, ut pro erroribus assueverit. Vim at euismod deterruisset, sit vocibus omittam et. Et pro purto zril.",
+    "full-text" => '<p>Горад: Менск (Беларусь)<br />
+Стылі&nbsp;(умоўна): фанк, рок, джаз, фольк<br />
+Мова выканання: беларуская, руская<br />
+Рэпертуар: больш за 30 арыгінальных аўтарскіх кампазіцыяў +&nbsp;кавер-вэрсіі&nbsp;знакамітых выканаўцаў<br />
+<br />
+Дыскаграфія:&nbsp;<br />
+сінгл "Вакно" (2013 г.)<br />
+ЕР "ВыЯВы" (2014 г.)<br />
+сінгл "Татачка" &nbsp;(2015 г.)<br />
+першая частка трылогіі "Ці чуеш" (LP) (2015 г.)</p>
+
+<p>Афіцыйнае відэа:<br />
+"Дотык" (2014 г.)<br />
+"Як мае быць" (ЕР "ВыЯВы", 2014 г.)<br />
+"Сустрэнь мяне (Джэм)"&nbsp;(ЕР "ВыЯВы", 2014 г.)<br />
+"Кактэбель"&nbsp;(ЕР "ВыЯВы", 2014 г.)<br />
+"Аднойчы на вуліцы (кавер на песню Ніно Катамадзэ+Insight&nbsp;"Once in the street")" (2014)</p>
+<p>Патрэбныя нам планеты выстраіліся ў рад адзінаццатага чысла адзінаццатага месяца дзве тысячы адзінаццатага года - з той пары і павялося: натхнёная сумесная творчасць, эксперыменты, гарачыя спрэчкі, адмысловыя і ня вельмі імпровізы на рэпетыцыях, камічныя і дасціпныя экспромты на выступленнях. Пошукі барабаншчыка, пошукі гука, пошукі назвы, пошукі месца, пошукі-пошукі-пошукі...</p>
+<p>&nbsp;Гэта несупынны дыялог музыкантаў, - мы проста спрабуем рабіць разам тое, што падабаецца кожнаму з нас. Гэта як калейдаскоп з нашых асабістых пераваг і густаў, магчымасцяў і жаданняў. Гэта ня лёгка. Гэта цікава. Гэта вымушае вучыцца адзін у аднога, трансфармавацца, пашыраць далягляд, прымаць рэчаіснасць і людзей навокал такімі, як ёсць, адкрываць сэрца і пазбаўляцца боязі не сустрэць паразумення. Мы шчыра верым, што ўсё гэта адлюстроўваецца ў нашых творах і вопыт нашых перажыванняў і адкрыццяў перацякае да слухача ў хвалях і вібрацыях, якія выпраменьвае нашая музыка.&nbsp;</p>
+<p>Мы прагнем новага ўзлёту творчасці ў нашай краіне, новага росквіту беларускай сучаснай музычнай культуры - самабытнай і ў той жа час не ізаляванай, зразумелай і высокамастацкай. Мы кіруемся на лепшае, дбаючы аб тым, што лепшае заўжды тое, што на душы. Нас натхняе ня толькі майстэрства сучасных замежных зорак і прызнаных мясцовых талентаў, але і класіка розных перыядаў, спевы нашых старэйшых пакаленняў, гаворка аднавяскоўцаў, мелодыка родных прастораў і пульс нашага Менску.<br />
+Сваёй творчасцю мы намагаемся пераканаць слухачоў у тым, што шчырасць - гэта прыгожа, радасць - гэта натуральна, любоў - гэта безумоўна.</p>
+<p>Любы сум мінае, цуды не заўжды там, дзе мы іх чакаем - падрыхтуйцеся да раптоўнай змены рытма, неўтаймоўнай коды, медытатыўнага "ад лібітум"... Мы ідзем. Мы шукаем, не губляючы з вачэй сваю мэту. Мы спрабуем заставацца па-над межамі. Заставацца сабой і не цурацца выпраўляць свае памылкі. Глыбіня і лёгкасць лірыкі, вакала і інструментальнага гучання - наша асноўная канцэпцыя і вызначальны аспект стылю.</p>
+<p>Вядзецца творчая праца над першым альбомам, выпрацоўваецца графік рэлізаў і выступленняў. Мы радыя прапановам і адкрытыя для супрацоўніцтва.&nbsp;<br />
+<br />
+Ваш Ілюжан:<br />
+Сяргей Харашкевіч – гітара, аранжыроўка<br />
+Аляксандр Коршук – віяланчэль<br />
+Яўген Кірдзей – бас, аранжыроўка, бэк-вакал<br />
+Каця Аліхвер –&nbsp;вакал, аранжыроўка, тэксты, перкусія<br />
+Міця Шацёр – барабаны<br />
+Дзяніс Нікольскі – кларнет<br />
+Дзіма Папоў – джамбей, перкусія<br />
+Цімур Рэйзіс&nbsp;– клавішныя</p>',
 ];

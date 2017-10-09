@@ -54,19 +54,44 @@ $about = [
      * <em> ... </em> курсив
      */
     //ТЕКСТ КОТОРЫЙ НАХОДИТСЯ СЛЕВА
-    "left-text" => "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "left-text" => "Город: Минск (Беларусь)<br />
+Стили (условно): фанк, рок, джаз, фольк<br />
+Язык исполнения: беларусский, русский<br />
+Репертуар: более 30 оригинальных&nbsp;авторских песен",
 
     //ТЕКСТ КОТОРЫЙ НАХОДИТСЯ СПРАВА
-    "right-text" => "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "right-text" => "Нужные нам планеты выстроились в ряд одиннадцатого числа одиннадцатого месяца две тысячи одиннадцатого года – с тех пор так и повелось: вдохновенное совместное творчество, эксперименты, горячие споры, замысловатые и не очень импровизации, иногда комичные, а иногда и очень даже удачные экспромты на выступлениях. Поиски барабанщика, поиски звука, поиски названия, поиски места, поиски-поиски-поиски…",
 
     //ПОЛНЫЙ ТЕКСТ КОТОРЫЙ ОТОБРАЖАЕТСЯ ВО ВСПЛЫВАЮЩЕМ ОКНЕ
-    "full-text" => "Lorem ipsum dolor sit amet, eu antiopam incorrupte cum. Sed probo habeo erroribus ei, choro scripta ex qui, oblique inimicus conceptam eam ut. At ludus maiorum propriae ius, eum ei quodsi mandamus mediocritatem. Vis quot idque dicta ei.
-<br/><br/>
-Expetenda patrioque ei est. An prima impetus sanctus duo, qui movet solet option id. Eu vivendo gubergren per, nisl viderer mandamus his no. Quo alia equidem consulatu ut, falli similique neglegentur an vel. Ea facer eripuit repudiandae pro, movet dolorem admodum ex mei. Quo nemore tibique disputationi an, esse comprehensam per cu.
-<br/><br/>
-Suas moderatius elaboraret per in. Cu mei quod deleniti, vide intellegat efficiantur eu eum, sed quis definiebas ea. Id usu dolor tantas, has ut regione apeirian, duis delicata at mei. Liber postea percipitur pro te. Vel molestie platonem deseruisse et, torquatos expetendis honestatis mel eu, his definiebas vituperata cu. Mel exerci adversarium in. Duo saperet graecis delectus id, usu affert virtute voluptaria te, legere vivendo pertinacia usu ei.
-<br/><br/>
-Vis probo scripta consulatu te, ut nam idque mediocrem. Nam iudico civibus ei, facer volutpat est no. Et tantas intellegat scriptorem vix, quodsi persius mel ad. Oblique sapientem sententiae no mei.
-<br/><br/>
-Case harum gubergren vix no. Te dicit libris sit, te equidem deserunt sea, et nec eripuit splendide. Eu sed eius feugiat albucius, ut pro erroribus assueverit. Vim at euismod deterruisset, sit vocibus omittam et. Et pro purto zril.",
+    "full-text" => '<p>Город: Минск (Беларусь)<br />
+Стили (условно): фанк, рок, джаз, фольк<br />
+Язык исполнения: беларусский, русский<br />
+Репертуар: более 30 оригинальных&nbsp;авторских песен<br />
+<br />
+Дискография:<br />
+сингл "Вакно" (2013 г.)<br />
+ЕР "ВыЯВы" (2014 г.)<br />
+сингл "Татачка" (2015 г.)<br />
+первая часть трилогии "Ці чуеш" (LP) (2015 г.)<br />
+<br />
+Официальное видео:<br />
+"Дотык" (2014 г.)<br />
+"Як мае быць" (ЕР "ВыЯВы", 2014 г.)<br />
+"Сустрэнь мяне (Джэм)"&nbsp;(ЕР "ВыЯВы", 2014 г.)<br />
+"Кактэбель"&nbsp;(ЕР "ВыЯВы", 2014 г.)<br />
+"Аднойчы на вуліцы (кавер на песню Нино Катамадзе+Insight&nbsp;"Once in the street")" (2014)</p>
+<p>Нужные нам планеты выстроились в ряд одиннадцатого числа одиннадцатого месяца две тысячи одиннадцатого года – с тех пор так и повелось: вдохновенное совместное творчество, эксперименты, горячие споры, замысловатые и не очень импровизации, иногда комичные, а иногда и очень даже удачные экспромты на выступлениях. Поиски барабанщика, поиски звука, поиски названия, поиски места, поиски-поиски-поиски… Это непрерывный диалог музыкантов, ‑ мы просто пробуем делать вместе то, что нравится каждому из нас. Это как калейдоскоп из наших личных предпочтений и вкусов, возможностей и желаний. Это не легко. Это интересно. Это заставляет учиться друг у друга, трансформироваться, расширять кругозор, принимать реальность и людей вокруг такими, как есть, открывать сердце и избавляться от страха остаться непонятым. Мы искренне верим, что всё это отражается в нашем творчестве, и опыт наших переживаний и открытий передаётся слушателям в волнах и вибрациях, которые излучает наша музыка. &nbsp;</p>
+<p>Мы жаждем нового взлёта творчества в нашей стране, нового расцвета беларусской современной музыкальной культуры – самобытной и в то же время не изолированной, понятной и высокохудожественной. Мы стремимся к лучшему, не забывая при этом, что лучшее – всегда то, что на душе. Нас вдохновляет не только мастерство современных зарубежных звёзд и признанных местных талантов, но и классика разных периодов, песни наших старших поколений, говор односельчан, мелодика родных просторов и пульс нашего Минска.</p>
+<p>Своим творчеством мы стараемся убедить слушателей в том, что искренность – это красиво, радость – это естественно, любовь – это безусловно.</p>
+<p>Любая печаль проходит, чудеса не всегда там, где мы ждём их – приготовьтесь к внезапной смене ритма, неудержимой коде, медитативному «ад либитум»… Мы идём. Мы ищем, не теряя из виду свою цель. Мы стараемся оставаться выше границ. Оставаться собой и не стесняться исправлять свои ошибки. Глубина и лёгкость лирики, вокала и инструментального звучания – основа нашей концепции и главный аспект стиля.</p>
+<p>Ведётся творческая работа над альбомом, вырабатывается график релизов и выступлений. Мы рады предложениям и открыты для сотрудничества.</p>
+<p>Ваш Илюжан:</p>
+<p>Сергей Хорошкевич – гитара, аранжировка</p>
+<p>Александр Коршук – виолончель</p>
+<p>Евгений Кирдей – бас, аранжировка, бэк-вокал</p>
+<p>Катя Олихвер – вокал, тексты, аранжировка, перкуссия</p>
+<p>Митя Шатёр – барабаны</p>
+<p>Денис Никольский – кларнет</p>
+<p>Дима Попов – перкуссия, цифровые эффекты</p>
+<p>Тимур Рейзис&nbsp;– клавишные</p>',
 ];
