@@ -1,5 +1,17 @@
 var sticky = $(".navbar").offset().top;
 var is_navbar_fixed = false;
+
+function showPage() {
+    $(".preload").fadeOut(200, function() {});
+}
+
+function lzld(elem) {
+    elem.setAttribute('src', elem.getAttribute('data-src'));
+    elem.onload = function() {
+        elem.removeAttribute('data-src');
+    };
+}
+
 $(window).scroll(function() {
     if(document.documentElement.clientWidth >= 1200) {
         if (window.pageYOffset >= sticky && !is_navbar_fixed) {
@@ -72,6 +84,7 @@ $(function() {
 
 
 $(document).ready(function(){
+
     $('.slick-musicians').slick({
         dots: false,
         infinite: false,
@@ -162,10 +175,10 @@ $(document).ready(function(){
         variableWidth: true
     });
     if(document.documentElement.clientWidth < 610) {
-        $('#album-0').addClass('focus');
+        $('#album-0').addClass('focused');
         $('.slick-albums').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-            $('#album-'+nextSlide).addClass('focus');
-            $('#album-'+currentSlide).removeClass('focus');
+            $('#album-'+nextSlide).addClass('focused');
+            $('#album-'+currentSlide).removeClass('focused');
         });
     }
 
@@ -290,7 +303,6 @@ $(document).ready(function(){
 
 });
 
-
 function openAlbumToListen(id) {
     var btn = $('#listen-btn-'+id);
     btn.prop('disabled', true);
@@ -313,6 +325,7 @@ function showMenu() {
 function closeModal() {
     $('.modal').modal('hide');
     history.pushState('', document.title, window.location.pathname);
+    window.location.hash = '';
 }
 function openAlbumModal(slide_num) {
     $('#albumCarousel').modal({backdrop: false});

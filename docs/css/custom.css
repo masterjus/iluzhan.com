@@ -28,6 +28,71 @@ h1.inverse, h2.inverse, h3.inverse, h4.inverse {
 a:hover, a:focus {
     text-decoration: none;
 }
+
+.preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #96475c; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#1e405b, #96475c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1e405b, #96475c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1e405b, #96475c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1e405b, #96475c); /* Standard syntax */
+}
+.preload .bg-logo {
+    background: url("/img/loader_logo.png") no-repeat top center;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -124px;
+    margin-top: -56px;
+    width: 331px;
+    height: 109px;
+}
+.loader {
+    position: absolute;
+    top: 55px;
+    left: 126px;
+    margin-left: -33px;
+    margin-top: -33px;
+    border: 4px solid #999;
+    border-top: 4px solid #fff;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    animation: spin 2s linear infinite;
+}
+@media (max-width: 768px) {
+    .preload .bg-logo {
+        margin-left: -62px;
+        margin-top: -28px;
+        width: 162px;
+        height: 55px;
+    }
+    .loader {
+        top: 27px;
+        left: 63px;
+        margin-left: -17px;
+        margin-top: -16px;
+        border: 2px solid #999;
+        border-top: 2px solid #fff;
+        width: 32px;
+        height: 32px;
+    }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
 .custom-btn {
     background: #01255f; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(to right, #854158, #01255f); /* For Safari 5.1 to 6.0 */
@@ -400,6 +465,7 @@ a:hover, a:focus {
     -o-background-size: 60% auto;
     background-size: 60% auto;
 }
+
 .intro-section .link {
     position: absolute;
     top: 50%;
@@ -557,35 +623,54 @@ a:hover, a:focus {
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
     background-size: 100% auto;
-    margin-top: 50px;
+    top: 50px;
     height: 230px;
     width: 230px;
-    -webkit-transition: margin 0.5s; /* For Safari 3.1 to 6.0 */
-    transition: margin 0.5s;
     position: absolute;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
     z-index: 0;
 }
 .audio-section .album:hover .disk,
-.audio-section .album.focus .disk {
-    margin-top: 10px;
+.audio-section .album.focused .disk {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
 }
 
 .audio-section .album img {
     position: relative;
     z-index: 1;
-    margin-top: 90px;
+    top: 90px;
     -webkit-box-shadow: 10px 10px 19px 0px rgba(204,204,204,1);
     -moz-box-shadow: 10px 10px 19px 0px rgba(204,204,204,1);
     box-shadow: 10px 10px 19px 0px rgba(204,204,204,1);
-    -webkit-transition: margin 0.5s; /* For Safari 3.1 to 6.0 */
-    transition: margin 0.5s;
-    margin-bottom: 40px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 .audio-section .album:hover img,
-.audio-section .album.focus img {
-    margin-top: 110px;
-    margin-bottom: 20px;
+.audio-section .album.focused img {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
 }
+
+.audio-section .album p {
+    margin-top: 130px;
+    margin-bottom: 10px;
+}
+
 .audio-section .slick-albums {
     margin-top: 20px;
     margin-bottom: 10px;

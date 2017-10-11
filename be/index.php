@@ -36,7 +36,8 @@ $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top">
+<body id="page-top" onload="showPage();">
+<div class="preload"><div class="bg-logo"><div class="loader"></div></div></div>
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="bg-changeable-image text-center">
@@ -68,7 +69,7 @@ $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url
                     <?php } ?>
                     <li id="lang" class="dropup">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=$current_lang?> <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dropdown-menu-right">
                             <?php foreach ($langs as $id => $title) { if($current_lang != $id) { ?>
                                 <li><a href="<?=$lang_url[$id]?>" class="page-scroll"><?=$title?></a></li>
                             <?php }} ?>
@@ -80,7 +81,6 @@ $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url
           </nav>
         </div>
     </section>
-
     <!-- Mobile Menu Button -->
     <div class="menu-btn hidden-lg" onclick="showMenu()">
         <div class="bar1"></div>
@@ -250,7 +250,7 @@ $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url
                     </div>
                     <div class="hidden">
                         <?php foreach ($albums as $id => $album) { ?>
-                            <div id="soundcloud-<?=$id?>"><?=$album['soundcloud_iframe']?></div>
+                            <div id="soundcloud-<?=$id?>"><?=str_replace('src="', ' onload="lzld(this)" data-src="', $album['soundcloud_iframe'])?></div>
                         <?php } ?>
                     </div>
                 </div>
@@ -350,7 +350,7 @@ $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url
                     <div class="slick-video">
                         <?php foreach ($videos as $video) { ?>
                             <div class="video hvr-grow">
-                                <?=$video['youtube_embed']?>
+                                <?=str_replace('src="', ' onload="lzld(this)" data-src="', $video['youtube_embed'])?>
                                 <p>
                                     <span class="title"><?=$video['title']?></span><br/>
                                     <?=$video['subtitle']?>
@@ -422,7 +422,7 @@ $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url
                         <?php } ?>
                         <div class="dropup item">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=mb_strtoupper($current_lang)?> <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu  dropdown-menu-right">
                                 <?php foreach ($langs as $id => $title) { if($current_lang != $id) { ?>
                                     <li><a href="<?=$lang_url[$id]?>" class="page-scroll"><?=$title?></a></li>
                                 <?php }} ?>
