@@ -7,6 +7,10 @@ require_once 'data/photo.php';
 require_once 'data/video.php';
 require_once 'data/events.php';
 $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url);
+
+if (empty($events)) {
+    unset($nav['events']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -259,6 +263,7 @@ $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url
     </section>
     <div class="wsb1"></div>
 
+    <?php if (!empty($events)): ?>
     <!-- Events Section -->
     <section id="events" class="events-section">
         <div class="container">
@@ -289,6 +294,7 @@ $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url
             </div>
         </div>
     </section>
+    <?php endif; ?>
 
     <!-- Photo Section -->
     <section id="photo" class="photo-section">
@@ -392,6 +398,8 @@ $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url
         </div>
     </section>
 
+<?php
+/*
     <!-- Support Section -->
     <section id="support" class="support-section">
         <div class="container">
@@ -404,6 +412,8 @@ $current_lang = array_search(explode('?', $_SERVER['REQUEST_URI'])[0], $lang_url
             </div>
         </div>
     </section>
+*/
+?>
 
     <footer>
         <div class="container">

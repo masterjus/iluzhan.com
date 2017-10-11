@@ -12,10 +12,10 @@ $lang_url = [
 
 // ССЫЛКИ НА СОЦИАЛЬНЫЕ СЕТИ
 $social_links = [
-    'fb' => '',
-    'vk' => '',
-    'youtube' => '',
-    'soundcloud' => '',
+    'fb' => 'https://www.facebook.com/Iluzhan/',
+    'vk' => 'https://vk.com/iluzhan',
+    'youtube' => 'https://youtube.com/iluzhan',
+    'soundcloud' => 'https://soundcloud.com/iluzhan-band',
 ];
 
 // НАСТРОЙКА ЯНДЕКС ДЕНЕГ ДЛЯ ПОЛУЧЕНИЯ ДОНАТА

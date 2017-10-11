@@ -2,7 +2,7 @@ var sticky = $(".navbar").offset().top;
 var is_navbar_fixed = false;
 
 function showPage() {
-    $(".preload").fadeOut(200, function() {});
+    $(".preload").fadeOut(100, function() {});
 }
 
 function lzld(elem) {
