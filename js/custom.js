@@ -1,8 +1,8 @@
-var sticky = $(".navbar").offset().top;
+var sticky = $(".menu").offset().top;
 var is_navbar_fixed = false;
 
 function showPage() {
-    $(".preload").fadeOut(100, function() {});
+    $(".preload").fadeOut(200, function() {});
 }
 
 function lzld(elem) {
@@ -15,11 +15,11 @@ function lzld(elem) {
 $(window).scroll(function() {
     if(document.documentElement.clientWidth >= 1200) {
         if (window.pageYOffset >= sticky && !is_navbar_fixed) {
-            $(".navbar").addClass("navbar-fixed-top");
+            $(".menu").addClass("menu-fixed-top");
             is_navbar_fixed = true;
         }
         if(window.pageYOffset < sticky && is_navbar_fixed) {
-            $(".navbar").removeClass("navbar-fixed-top");
+            $(".menu").removeClass("menu-fixed-top");
             is_navbar_fixed = false;
         }
         if (window.pageYOffset >= (sticky - 80)) {

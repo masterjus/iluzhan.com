@@ -22,7 +22,7 @@ $about = [
         ],
         [
             "name" => "Каця",
-            "surname" => "Алiхвер",
+            "surname" => "Папова",
             "position" => "Ввкал, тэксты, аранжыроўка, перкусiя",
             "img" => "/img/musicians/4.jpg",
         ],

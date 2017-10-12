@@ -49,43 +49,33 @@ if (empty($events)) {
             <div class="bg-image"></div>
             <div class="link"><a href="#listen" class="page-scroll"><?=$trans['listen']?> <i class="icon-headphone"></i></a></div>
         </div>
-        <div class="menu">
-          <nav class="navbar navbar-inverse visible-lg-block"><!-- navbar-fixed-top  -->
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                  <img alt="Iлюжан" src="/img/logo.png">
-                </a>
-              </div>
-              <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                  <?php foreach ($nav as $id => $title) { ?>
-                    <li><a href="#<?=$id?>" class="page-scroll"><?=$title?></a></li>
-                  <?php } ?>
-                    <li class="divider"></li>
-                    <?php foreach ($social_links as $id => $href) { ?>
-                        <li class="social-btn"><a href="<?=$href?>" target="_blank"><i class="icon-<?=$id?>"></i></a></li>
-                    <?php } ?>
-                    <li id="lang" class="dropup">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=$current_lang?> <span class="caret"></span></a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <?php foreach ($langs as $id => $title) { if($current_lang != $id) { ?>
-                                <li><a href="<?=$lang_url[$id]?>" class="page-scroll"><?=$title?></a></li>
-                            <?php }} ?>
-                        </ul>
-                    </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
     </section>
+
+    <!-- Desktop Menu -->
+    <div class="menu">
+        <div class="menu-container">
+            <div class="left">
+                <a class="page-scroll" href="#page-top"><img alt="Iлюжан" src="/img/logo.png"></a>
+                <?php foreach ($nav as $id => $title) { ?>
+                    <a href="#<?=$id?>" class="page-scroll"><?=$title?></a>
+                <?php } ?>
+            </div>
+            <div class="right">
+                <?php foreach ($social_links as $id => $href) { ?>
+                    <div class="social-btn"><a href="<?=$href?>" target="_blank"><i class="icon-<?=$id?>"></i></a></div>
+                <?php } ?>
+                <div id="lang" class="dropup">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=$current_lang?> <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <?php foreach ($langs as $id => $title) { if($current_lang != $id) { ?>
+                            <li><a href="<?=$lang_url[$id]?>" class="page-scroll"><?=$title?></a></li>
+                        <?php }} ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Mobile Menu Button -->
     <div class="menu-btn hidden-lg" onclick="showMenu()">
         <div class="bar1"></div>
