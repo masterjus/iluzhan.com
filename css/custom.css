@@ -819,7 +819,7 @@ a:hover, a:focus {
 
 /* RIDER */
 .rider-section {
-    padding-top: 50px;
+    padding: 50px 0;
 }
 .rider-section h1 {
     margin-bottom: 35px;
