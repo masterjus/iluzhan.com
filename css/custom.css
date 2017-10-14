@@ -417,6 +417,12 @@ a:hover, a:focus {
     color: #b6f9d3;
     background: none;
 }
+@media(max-width:1200px) {
+    .menu {
+        display: none;
+    }
+}
+
 .intro-section {
   height: 100%;
   background: #96475c; /* For browsers that do not support gradients */
@@ -819,7 +825,7 @@ a:hover, a:focus {
 
 /* RIDER */
 .rider-section {
-    padding: 50px 0;
+    padding-top: 50px;
 }
 .rider-section h1 {
     margin-bottom: 35px;
