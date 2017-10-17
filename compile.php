@@ -16,6 +16,7 @@ foreach (['css', 'js', 'fonts', 'img', 'files'] as $folder) {
     mkdir($target_dir.'/'.$folder);
     cpy($root_directory.'/'.$folder , $target_dir.'/'.$folder);
 }
+cpy("$dir_name/CNAME", $target_dir);
 
 foreach ($lang_url as $folder => $url) {
     if($folder != 'ru') {
@@ -49,7 +50,7 @@ function cpy($source, $dest){
         closedir($dir_handle);
     } else {
         copy($source, $dest);
-        echo 'copy';
+        echo 'copy ' . $source;
     }
 
 }
