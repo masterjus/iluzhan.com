@@ -7,6 +7,11 @@
  */
 $videos = [
     [
+        'title' => 'Краудфандынг',
+        'subtitle' => 'Краудфандынг',
+        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/eUO8fVza_Rg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+    ],
+    [
         'title' => 'Reset',
         'subtitle' => 'Афiцыяльнае лiрык вiдэа',
         'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/a97f83uOii4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
