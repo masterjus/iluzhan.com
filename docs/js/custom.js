@@ -6,7 +6,11 @@ function showPage() {
 }
 
 function lzld(elem) {
-    elem.setAttribute('src', elem.getAttribute('data-src'));
+    var dataSrc = elem.getAttribute('data-src');
+    if (!dataSrc) {
+        return;
+    }
+    elem.setAttribute('src', dataSrc);
     elem.onload = function() {
         elem.removeAttribute('data-src');
     };

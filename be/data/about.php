@@ -6,44 +6,45 @@ $about = [
             "name" => "Сяргей",
             "surname" => "Харашкевiч",
             "position" => "Гiтара, аранжыроўка",
-            "img" => "/img/musicians/1.jpg",
+            "img" => "/img/musicians/sergey.jpg",
         ],
         [
             "name" => "Аляксандр",
             "surname" => "Коршук",
             "position" => "виялянчэль",
-            "img" => "/img/musicians/2.jpg",
+            "img" => "/img/musicians/sasha.jpg",
         ],
         [
             "name" => "Яўген",
             "surname" => "Кiрдзей",
-            "position" => "Бас, аранжыроўка",
-            "img" => "/img/musicians/3.jpg",
+            "position" => "Бас, аранжыроўка <br> бэк-вакал",
+            "img" => "/img/musicians/yauhen.jpg",
         ],
         [
             "name" => "Каця",
             "surname" => "Папова",
             "position" => "Ввкал, тэксты, аранжыроўка, перкусiя",
-            "img" => "/img/musicians/4.jpg",
+            "img" => "/img/musicians/katya.jpg",
+            "class" => 'dark',
         ],
         [
             "name" => "Миця",
             "surname" => "Шацёр",
             "position" => "Барабаны",
-            "img" => "/img/musicians/5.jpg",
+            "img" => "/img/musicians/mitya.jpg",
         ],
         [
             "name" => "Дзянiс",
             "surname" => "Нiкольскi",
             "position" => "Кларнэт",
-            "img" => "/img/musicians/6.jpg",
+            "img" => "/img/musicians/dan.jpg",
         ],
-        [
+/*        [
             "name" => "Максiм",
             "surname" => "Блахаў",
             "position" => "Скрыпка",
             "img" => "/img/musicians/7.jpg",
-        ],
+        ],*/
     ],
 
     /* ПО РАБОТЕ С ТЕКСТОМ

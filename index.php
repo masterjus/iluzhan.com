@@ -140,15 +140,15 @@ if (empty($events)) {
                 </div>
                 <div class="col-sm-12">
                     <div class="slick-musicians">
-                        <?php foreach ($about['musicians'] as $musician) { ?>
+                        <?php foreach ($about['musicians'] as $musician) : ?>
                             <div class="slide">
-                                <div class="musician hvr-grow" style="background: url('<?=$musician['img']?>') no-repeat;">
+                                <div class="musician hvr-grow <?=isset($musician['class']) ? $musician['class'] : ''?>" style="background: url('<?=$musician['img']?>') 100% 100%  no-repeat; background-size: cover;">
                                     <h3 class="inverse"><?=$musician['name']?><br/><?=$musician['surname']?></h3>
                                     <hr>
                                     <p><?=$musician['position']?></p>
                                 </div>
                             </div>
-                        <?php } ?>
+                        <?php endforeach; ?>
                     </div>
                     <div class="slick-arrows"></div>
                 </div>

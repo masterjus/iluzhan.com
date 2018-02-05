@@ -10,42 +10,52 @@
  * tracks - перечень треков в правильном порядке
  */
 $albums = [
-	[
-		"title" => "Ці чуеш",
+    [
+        "title" => "Выявы",
+        "slug" => "viavi",
+        "year" => "2014",
+        "img" => "/img/albums/viyavi.jpg",
+        "soundcloud_iframe" => "<iframe width=\"100%\" height=\"350\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/47396066&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true\"></iframe>",
+        "description" => "Дэбютны трыпціх гурта. Тры песні, тры малюнкі нашай рэчаіснасці ў розных ракурсах. Дыск утрымлівае жывы запіс у відэа- і аўдыё-фарматах.",
+        "tracks" => ["Як мае быць", "Кактэбель", "Сустрэнь мяне (Джэм)"],
+    ],
+/*    [
+        "title" => "Татачка",
+        "slug" => "tatachka",
+        "year" => "2015",
+        "img" => "/img/albums/tatachka.jpg",
+        "soundcloud_iframe" => "<iframe width=\"100%\" height=\"450\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179766864&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true\"></iframe>",
+        "description" => "Прадвеснік першай часткі трылогіі. Моц і пяшчота – тое, што натхняе жыццё працягвацца. Варта пачуць.",
+        "tracks" => ["Верыш", "Iльняная", "Зямлiца", "Татачка", "Маценька", "Сцяжынка"],
+    ],*/
+    [
+        "title" => "Ці чуеш",
         "slug" => "ci_chuesh",
-		"year" => "2015",
-		"img" => "/img/albums/1.jpg",
-		"soundcloud_iframe" => "<iframe width=\"100%\" height=\"450\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/47396066&amp;color=%23ff9900&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false\"></iframe>",
-		"description" => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-		"tracks" => ["Верыш", "Iльняная", "Зямлiца", "Татачка", "Маценька", "Сцяжынка"],		
-	],
-	[
-		"title" => "Выявы",
-        "slug" => "",
-		"year" => "2015",
-		"img" => "/img/albums/2.jpg",
-		"soundcloud_iframe" => "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/286555306&amp;color=%23ff9900&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false\"></iframe>",
-		"description" => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-		"tracks" => ["Верыш", "Iльняная", "Зямлiца", "Татачка", "Маценька", "Сцяжынка"],		
-	],
-	[
-		"title" => "Reset Single",
-        "slug" => "",
-		"year" => "2015",
-		"img" => "/img/albums/3.jpg",
-		"soundcloud_iframe" => "<iframe width=\"100%\" height=\"450\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/160431181&amp;color=%23ff9900&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false\"></iframe>",
-		"description" => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-		"tracks" => ["Верыш", "Iльняная", "Зямлiца", "Татачка", "Маценька", "Сцяжынка"],		
-	],
-	[
-		"title" => "Live - Гомель",
-        "slug" => "",
-		"year" => "2015",
-		"img" => "/img/albums/4.jpg",
-		"soundcloud_iframe" => "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/106215600&amp;color=%23ff9900&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true\"></iframe>",
-		"description" => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-		"tracks" => ["Верыш", "Iльняная", "Зямлiца", "Татачка", "Маценька", "Сцяжынка"],		
-	],
+        "year" => "2015",
+        "img" => "/img/albums/ci_chuesh.jpg",
+        "soundcloud_iframe" => "<iframe width=\"100%\" height=\"450\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179766864&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true\"></iframe>",
+        "description" => "Як чуецца, так і пішацца. Як жывецца, так і граецца. Як марыцца, так і спяваецца. Што мы хацелі сказаць гэтым альбомам? Штось накшталт таго, што б сказалі вам травы ды дрэвы, птушкі ды ручаі, што стаяць, бягуць, растуць і гняздзяцца ў гэтай зямлі. Дзеці - бацькі - унукі - гэта не храналогія, гэта метафізічны стан кожнага з нас. Тут песні не пра каханне. Тут песні пра Любоў. Яны не даюць надзеі, яны мацуюць веру. Вось вам наш бесцялесны спадарожнік у вандроўцы праз будні і святы. ",
+        "tracks" => ["Верыш", "Iльняная", "Зямлiца", "Татачка", "Маценька", "Сцяжынка"],
+    ],
+    [
+        "title" => "Як нiколi раней",
+        "slug" => "yak_nikoli",
+        "year" => "2017",
+        "img" => "/img/albums/yak_nikoli.jpg",
+        "soundcloud_iframe" => "<iframe width=\"100%\" height=\"600\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/286555306&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true\"></iframe>",
+        "description" => "Наш падарунак слухачам, каб у прыцемку гарадзкіх будняў яны маглі лішні раз адчуць рамантыку і натхненьне.",
+        "tracks" => ["Як нiколi раней"],
+    ],
+    [
+        "title" => "Reset",
+        "slug" => "reset",
+        "year" => "2017",
+        "img" => "/img/albums/reset.jpg",
+        "soundcloud_iframe" => "<iframe width=\"100%\" height=\"600\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331330747&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true\"></iframe>",
+        "description" => "Прадвеснік другой часткі трылогіі. Жыццё пачынаецца не аднойчы. Развітанне з жывымі бывае ячшэ больш складаным, чым з памерлымі. Драматычны вальс для аптымістаў.",
+        "tracks" => ["Reset"],
+    ],
+
 
 //  ШАБЛОН ДЛЯ ДОБАВЛЕНИЯ НОВОГО АЛЬБОМА
 //    [
