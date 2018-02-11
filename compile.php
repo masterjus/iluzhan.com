@@ -16,7 +16,6 @@ foreach (['css', 'js', 'fonts', 'img', 'files'] as $folder) {
     mkdir($target_dir.'/'.$folder);
     cpy($root_directory.'/'.$folder , $target_dir.'/'.$folder);
 }
-cpy("$dir_name/CNAME", $target_dir);
 
 foreach ($lang_url as $folder => $url) {
     if($folder != 'ru') {
@@ -28,6 +27,10 @@ foreach ($lang_url as $folder => $url) {
     fclose($fp);
 }
 
+file_put_contents("$target_dir/CNAME", 'www.iluzhan.com');
+
+system("rm -rf $root_directory/docs");
+rename($target_dir, "$root_directory/docs");
 echo "<h1>HTML сайт создан в папке: ".$target_dir."</h1>";
 
 function cpy($source, $dest){
@@ -50,7 +53,7 @@ function cpy($source, $dest){
         closedir($dir_handle);
     } else {
         copy($source, $dest);
-        echo 'copy ' . $source;
+        echo "copy $source to $dest";
     }
 
 }

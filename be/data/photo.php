@@ -37,11 +37,6 @@ $photos = [
         "img" => "/img/photos/4.jpg",
         "img_sm" => "/img/photos/small/4.jpg",
     ],
-    [
-        "title" => "Аутар: Вольга Парры (Lillaa studio)",
-        "img" => "/img/photos/5.jpg",
-        "img_sm" => "/img/photos/small/5.jpg",
-    ],
 
 //  ШАБЛОН ДЛЯ ДОБАВЛЕНИЯ НОВОЙ ФОТОГРАФИИ
 //    [
