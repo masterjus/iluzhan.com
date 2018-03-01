@@ -7,6 +7,11 @@
  */
 $videos = [
     [
+        'title' => 'Выступ на Belsat Music Live',
+        'subtitle' => 'Эфiр ад 24.02.2018',
+        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/sVaKZGK8IUA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+    ],
+    [
         'title' => 'Краудфандынг',
         'subtitle' => 'Краудфандынг',
         'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/eUO8fVza_Rg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
