@@ -312,6 +312,7 @@ function openAlbumToListen(id) {
     btn.prop('disabled', true);
     var temp = btn.html();
     btn.html('<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>');
+
     $('.soundcloud_iframe').html($('#soundcloud-'+id).html());
     var tag = $("#listen");
     setTimeout(function () {

@@ -9,62 +9,62 @@ $videos = [
     [
         'title' => 'Выступление на Belsat Music Live',
         'subtitle' => 'Эфир от 24.02.2018',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/sVaKZGK8IUA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="sVaKZGK8IUA"></div>',
     ],
     [
         'title' => 'Краудфандинг',
         'subtitle' => 'Краудфандинг',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/eUO8fVza_Rg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="eUO8fVza_Rg"></div>',
     ],
     [
         'title' => 'Reset',
         'subtitle' => 'Официальное лирик видео',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/a97f83uOii4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="a97f83uOii4"></div>',
     ],
     [
         'title' => 'Замілаванне',
         'subtitle' => 'Концерт в TNT Rock club, 18.09.2016',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/_pjF-TNtep0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="_pjF-TNtep0"></div>',
     ],
     [
         'title' => 'Не улетай',
         'subtitle' => 'Бар "Квартирник", Гомель, 07.08.2015',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/2CxuPeS_Mk8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="2CxuPeS_Mk8"></div>',
     ],
     [
         'title' => 'Чай',
         'subtitle' => 'Концерт в TNT Rock club',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/dVcLdWdlFd0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="dVcLdWdlFd0"></div>',
     ],
     [
         'title' => 'Сумасшедшая Любовь',
         'subtitle' => 'Концерт в TNT Rock club, 22.02.2015',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/z8wGHRp42xU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="z8wGHRp42xU"></div>',
     ],
     [
         'title' => 'Once in the street',
         'subtitle' => 'Nino Katamadze feat. Katja Olihver, 20.11.2014',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/dFLG519yBNo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="dFLG519yBNo"></div>',
     ],
     [
         'title' => 'Аднойчы на вулiцы',
         'subtitle' => 'Кавер на песню Nino Katamadze - Once In The Street',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/GRlVdbgaklc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="GRlVdbgaklc"></div>',
     ],
     [
         'title' => 'Сустрэнь мяне (Jam)',
         'subtitle' => 'Видео из альбома "ВыЯВы"',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/rMaodD1p2kw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="rMaodD1p2kw"></div>',
     ],
     [
         'title' => 'Кактэбель',
         'subtitle' => 'Видео из альбома "ВыЯВы"',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/ByDJCqI9yNE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="ByDJCqI9yNE"></div>',
     ],
     [
         'title' => 'Як мае быць',
         'subtitle' => 'Видео из альбома "ВыЯВы"',
-        'youtube_embed' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/8vXH4b1Wh5c?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+        'youtube_embed' => '<div class="youtube-player" data-id="8vXH4b1Wh5c"></div>',
     ],
 //  ШАБЛОН ДЛЯ ДОБАВЛЕНИЯ НОВОГО ВИДЕО
 //    [

@@ -1603,10 +1603,8 @@ a:hover, a:focus {
 
 /* VIDEO */
 .video-section {
-    background: #00081d;
     padding-top: 50px;
     padding-bottom: 60px;
-    color: #fff;
     font-weight: 700;
     overflow-x: hidden;
     -ms-overflow-x: hidden;
@@ -1644,6 +1642,7 @@ a:hover, a:focus {
         padding-bottom: 40px;
     }
 }
+
 
 /* RIDER */
 .rider-section {
@@ -2159,7 +2158,7 @@ footer .social-btn:hover i {
     height: 30px;
 }
 
-}
+
 .video-section .slick-video {
     width: 4000px;
 }

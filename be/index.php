@@ -449,6 +449,7 @@ if (empty($events)) {
     <script src="/js/jquery.easing.min.js"></script>
     <script src="/js/waypoint.js"></script>
     <script src="/js/slick.min.js"></script>
-    <script src="/js/custom.min.js"></script>
+    <script src="/js/custom.js"></script>
+
 </body>
 </html>
