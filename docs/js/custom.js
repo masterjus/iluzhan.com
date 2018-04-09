@@ -2,7 +2,7 @@ var sticky = $(".menu").offset().top;
 var is_navbar_fixed = false;
 
 function showPage() {
-    $(".preload").fadeOut(200, function() {});
+    $(".preload").fadeOut(50, function() {});
 }
 
 function lzld(elem) {
@@ -296,7 +296,6 @@ $(document).ready(function(){
     $('.photo-modal-slick').on('afterChange', function(event, slick, currentSlide){
         window.location.hash = '#gallery-'+currentSlide;
     });
-
     var modal_id = location.href.split('#');
     modal_id = (modal_id.length > 1) ? modal_id[1] : '';
     var modal_to_open = modal_id.split('-');
@@ -308,20 +307,56 @@ $(document).ready(function(){
 });
 
 function openAlbumToListen(id) {
-    var btn = $('#listen-btn-'+id);
+    event.preventDefault()
+    var btn = $('#listen-btn-' + id);
     btn.prop('disabled', true);
     var temp = btn.html();
     btn.html('<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>');
-
-    $('.soundcloud_iframe').html($('#soundcloud-'+id).html());
+    $('.soundcloud_iframe').html($('#soundcloud-' + id).html());
+        var dix, e,
+            x = $("#sound");
+        dix = document.createElement("iframe");
+        $("#sound").append(dix);
+        var embed2 = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/ID&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true";
+        e = x.data('columns');
+        dix.setAttribute("data-id"," ");
+        dix.setAttribute("src", embed2.replace("ID", e));
+        dix.setAttribute("width", "100%");
+        dix.setAttribute("height", "450");
+        dix.setAttribute("scrolling", "no");
+        dix.setAttribute("allow", "autoplay");
+        dix.setAttribute("height", "450");
+        dix.setAttribute("frameborder", "no");
+        dix.setAttribute("onload", "lzld(this)");
     var tag = $("#listen");
     setTimeout(function () {
         closeModal();
         btn.html(temp);
-        $('html body').animate({scrollTop: tag.offset().top},'fast');
+        $('html body').animate({scrollTop: tag.offset().top}, 'fast');
         btn.prop('disabled', false);
     }, 1000);
-}
+    }
+$( window ).load(function() {
+    var dix, e,
+        x = $("#default_player");
+    dix = document.createElement("iframe");
+    $("#default_player").append(dix);
+    var embed2 = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/ID&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true";
+    e = x.data('columns');
+    dix.setAttribute("data-id"," ");
+    dix.setAttribute("src", embed2.replace("ID", e));
+    dix.setAttribute("width", "100%");
+    dix.setAttribute("height", "450");
+    dix.setAttribute("scrolling", "no");
+    dix.setAttribute("allow", "autoplay");
+    dix.setAttribute("height", "450");
+    dix.setAttribute("frameborder", "no");
+    dix.setAttribute("onload", "lzld(this)");
+});
+
+
+
+
 
 function showMenu() {
     $('.modal').modal('hide');
@@ -353,3 +388,33 @@ function openPhotoGallery(slide_num) {
     }, 400);
 }
 
+
+document.addEventListener("DOMContentLoaded",
+    function() {
+        var div, n,
+            v = document.getElementsByClassName("youtube-player");
+        for (n = 0; n < v.length; n++) {
+            div = document.createElement("div");
+
+            div.setAttribute("data-id", v[n].dataset.id);
+            div.innerHTML = labnolThumb(v[n].dataset.id);
+            div.onclick = labnolIframe;
+            v[n].appendChild(div);
+        }
+    });
+
+function labnolThumb(id) {
+    var thumb = '<img src="https://img.youtube.com/vi/ID/mqdefault.jpg">',
+        play = '<div class="start-video"><img src="https://erweb.ru/wp-content/uploads/2017/09/yt_icon_rgb.png"></div>';
+    return thumb.replace("ID", id) + play;
+}
+
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "1");
+
+    this.parentNode.replaceChild(iframe, this);
+}

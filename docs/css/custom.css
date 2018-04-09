@@ -818,7 +818,7 @@ a:hover, a:focus {
     text-transform: uppercase;
     font-size: 18px;@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&subset=cyrillic');}
 html {
     width: 100%;
     height: 100%;
@@ -1603,10 +1603,8 @@ a:hover, a:focus {
 
 /* VIDEO */
 .video-section {
-    background: #00081d;
     padding-top: 50px;
     padding-bottom: 60px;
-    color: #fff;
     font-weight: 700;
     overflow-x: hidden;
     -ms-overflow-x: hidden;
@@ -1644,6 +1642,7 @@ a:hover, a:focus {
         padding-bottom: 40px;
     }
 }
+
 
 /* RIDER */
 .rider-section {
@@ -2159,7 +2158,7 @@ footer .social-btn:hover i {
     height: 30px;
 }
 
-}
+
 .video-section .slick-video {
     width: 4000px;
 }
