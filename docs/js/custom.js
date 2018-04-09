@@ -303,10 +303,8 @@ $(document).ready(function(){
         case 'gallery': openPhotoGallery(modal_to_open[1]); break;
         case 'album': openAlbumModal(modal_to_open[1]); break;
     }
-
 });
-
-function openAlbumToListen(id) {
+function openAlbumToListen(id,slug) {
     event.preventDefault()
     var btn = $('#listen-btn-' + id);
     btn.prop('disabled', true);
@@ -319,13 +317,11 @@ function openAlbumToListen(id) {
         $("#sound").append(dix);
         var embed2 = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/ID&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true";
         e = x.data('columns');
-        dix.setAttribute("data-id"," ");
         dix.setAttribute("src", embed2.replace("ID", e));
         dix.setAttribute("width", "100%");
         dix.setAttribute("height", "450");
         dix.setAttribute("scrolling", "no");
         dix.setAttribute("allow", "autoplay");
-        dix.setAttribute("height", "450");
         dix.setAttribute("frameborder", "no");
         dix.setAttribute("onload", "lzld(this)");
     var tag = $("#listen");
@@ -353,11 +349,6 @@ $( window ).load(function() {
     dix.setAttribute("frameborder", "no");
     dix.setAttribute("onload", "lzld(this)");
 });
-
-
-
-
-
 function showMenu() {
     $('.modal').modal('hide');
     $('#mobileMenu').modal('show');
@@ -387,8 +378,6 @@ function openPhotoGallery(slide_num) {
         $(document).find('#photo-'+slide_num).attr('tabindex', 0).focus();
     }, 400);
 }
-
-
 document.addEventListener("DOMContentLoaded",
     function() {
         var div, n,
@@ -397,24 +386,21 @@ document.addEventListener("DOMContentLoaded",
             div = document.createElement("div");
 
             div.setAttribute("data-id", v[n].dataset.id);
-            div.innerHTML = labnolThumb(v[n].dataset.id);
-            div.onclick = labnolIframe;
+            div.innerHTML = youtubeThumb(v[n].dataset.id);
+            div.onclick = youtubeIframe;
             v[n].appendChild(div);
         }
     });
-
-function labnolThumb(id) {
+function youtubeThumb(id) {
     var thumb = '<img src="https://img.youtube.com/vi/ID/mqdefault.jpg">',
         play = '<div class="start-video"><img src="https://erweb.ru/wp-content/uploads/2017/09/yt_icon_rgb.png"></div>';
     return thumb.replace("ID", id) + play;
 }
-
-function labnolIframe() {
+function youtubeIframe() {
     var iframe = document.createElement("iframe");
     var embed = "https://www.youtube.com/embed/ID?autoplay=1";
     iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("allowfullscreen", "1");
-
     this.parentNode.replaceChild(iframe, this);
 }

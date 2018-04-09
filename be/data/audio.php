@@ -15,7 +15,7 @@ $albums = [
         "slug" => "viavi",
         "year" => "2014",
         "img" => "/img/albums/viyavi.jpg",
-        "soundcloud_iframe" => "div id=\"sound\" data-columns=\"playlists/47396066\"></div>",
+        "soundcloud_iframe" => "<div id="sound" data-columns="playlists/47396066"></div>",
         "description" => "Дэбютны трыпціх гурта. Тры песні, тры малюнкі нашай рэчаіснасці ў розных ракурсах. Дыск утрымлівае жывы запіс у відэа- і аўдыё-фарматах.",
         "tracks" => ["Як мае быць", "Кактэбель", "Сустрэнь мяне (Джэм)"],
     ],

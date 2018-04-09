@@ -229,7 +229,7 @@ if (empty($events)) {
                                     </p>
                                 </div>
                             </div>
-                            <button type="button" id="listen-btn-<?=$id?>" class="center-block custom-btn" onclick="openAlbumToListen('<?=$id?>');">
+                            <button type="button" id="listen-btn-<?=$id?>" class="center-block custom-btn" onclick="openAlbumToListen('<?=$id?>','<?=$.slug?>');">
                                 <?=$trans['listen']?> <span class="icon-headphone"></span>
                             </button>
                         </div>
