@@ -304,26 +304,26 @@ $(document).ready(function(){
         case 'album': openAlbumModal(modal_to_open[1]); break;
     }
 });
-function openAlbumToListen(id,slug) {
+function openAlbumToListen(id) {
     event.preventDefault()
     var btn = $('#listen-btn-' + id);
     btn.prop('disabled', true);
     var temp = btn.html();
     btn.html('<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>');
-    $('.soundcloud_iframe').html($('#soundcloud-' + id).html());
-        var dix, e,
-            x = $("#sound");
-        dix = document.createElement("iframe");
-        $("#sound").append(dix);
-        var embed2 = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/ID&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true";
-        e = x.data('columns');
-        dix.setAttribute("src", embed2.replace("ID", e));
-        dix.setAttribute("width", "100%");
-        dix.setAttribute("height", "450");
-        dix.setAttribute("scrolling", "no");
-        dix.setAttribute("allow", "autoplay");
-        dix.setAttribute("frameborder", "no");
-        dix.setAttribute("onload", "lzld(this)");
+    $('.soundcloud_div').html($('#soundcloud-' + id).html());
+    var $soundcloudIdValue, iframe, $soundcloudId, soundcloudLink;
+    $soundcloudIdValue = $('.soundcloud_div').find('div').attr('id');
+    $soundcloudId = $('#' + $soundcloudIdValue);
+    iframe = document.createElement("iframe");
+    $soundcloudId.append(iframe);
+    soundcloudLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/ID&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true";
+    iframe.setAttribute("src", soundcloudLink.replace("ID", $soundcloudId.data('playlist')));
+    iframe.setAttribute("width", "100%");
+    iframe.setAttribute("height", "450");
+    iframe.setAttribute("scrolling", "no");
+    iframe.setAttribute("allow", "autoplay");
+    iframe.setAttribute("frameborder", "no");
+    iframe.setAttribute("onload", "lzld(this)");
     var tag = $("#listen");
     setTimeout(function () {
         closeModal();
@@ -333,21 +333,20 @@ function openAlbumToListen(id,slug) {
     }, 1000);
     }
 $( window ).load(function() {
-    var dix, e,
-        x = $("#default_player");
-    dix = document.createElement("iframe");
-    $("#default_player").append(dix);
-    var embed2 = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/ID&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true";
-    e = x.data('columns');
-    dix.setAttribute("data-id"," ");
-    dix.setAttribute("src", embed2.replace("ID", e));
-    dix.setAttribute("width", "100%");
-    dix.setAttribute("height", "450");
-    dix.setAttribute("scrolling", "no");
-    dix.setAttribute("allow", "autoplay");
-    dix.setAttribute("height", "450");
-    dix.setAttribute("frameborder", "no");
-    dix.setAttribute("onload", "lzld(this)");
+    var iframe, soundcloudIdDefLink,
+        $soundcloudIdDefault = $("#default_player");
+    iframe = document.createElement("iframe");
+    $soundcloudIdDefault.append(iframe);
+    soundcloudIdDefLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/ID&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true";
+    iframe.setAttribute("data-id"," ");
+    iframe.setAttribute("src", soundcloudIdDefLink.replace("ID", $soundcloudIdDefault.data('playlist')));
+    iframe.setAttribute("width", "100%");
+    iframe.setAttribute("height", "450");
+    iframe.setAttribute("scrolling", "no");
+    iframe.setAttribute("allow", "autoplay");
+    iframe.setAttribute("height", "450");
+    iframe.setAttribute("frameborder", "no");
+    iframe.setAttribute("onload", "lzld(this)");
 });
 function showMenu() {
     $('.modal').modal('hide');

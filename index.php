@@ -248,12 +248,12 @@ if (empty($events)) {
                 <div class="col-lg-12 text-center">
                     <h1><?=$section['listen']?></h1>
                     <br/>
-                    <div class="soundcloud_iframe">
+                    <div class="soundcloud_div">
                         <?=$default_player?>
                     </div>
                     <div class="hidden">
                         <?php foreach ($albums as $id => $album) { ?>
-                            <div id="soundcloud-<?=$id?>"><?=str_replace('src="', ' onload="lzld(this)" data-src="', $album['soundcloud_iframe'])?></div>
+                            <div id="soundcloud-<?=$id?>"><?=str_replace('src="', ' onload="lzld(this)" data-src="', $album['soundcloud_div'])?></div>
                         <?php } ?>
                     </div>
                 </div>
