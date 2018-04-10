@@ -2,7 +2,7 @@ var sticky = $(".menu").offset().top;
 var is_navbar_fixed = false;
 
 function showPage() {
-    $(".preload").fadeOut(200, function() {});
+    $(".preload").fadeOut(50, function() {});
 }
 
 function lzld(elem) {
@@ -296,7 +296,6 @@ $(document).ready(function(){
     $('.photo-modal-slick').on('afterChange', function(event, slick, currentSlide){
         window.location.hash = '#gallery-'+currentSlide;
     });
-
     var modal_id = location.href.split('#');
     modal_id = (modal_id.length > 1) ? modal_id[1] : '';
     var modal_to_open = modal_id.split('-');
@@ -304,24 +303,50 @@ $(document).ready(function(){
         case 'gallery': openPhotoGallery(modal_to_open[1]); break;
         case 'album': openAlbumModal(modal_to_open[1]); break;
     }
-
 });
-
 function openAlbumToListen(id) {
-    var btn = $('#listen-btn-'+id);
+    event.preventDefault()
+    var btn = $('#listen-btn-' + id);
     btn.prop('disabled', true);
     var temp = btn.html();
     btn.html('<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>');
-    $('.soundcloud_iframe').html($('#soundcloud-'+id).html());
+    $('.soundcloud_div').html($('#soundcloud-' + id).html());
+    var $soundcloudIdValue, iframe, $soundcloudId, $soundcloudHeight;
+    $soundcloudIdValue = $('.soundcloud_div').find('div').attr('id');
+    $soundcloudHeight = $('.soundcloud_div').find('div').attr('height');
+    $soundcloudId = $('#' + $soundcloudIdValue);
+    iframe = document.createElement("iframe");
+    $soundcloudId.append(iframe);
+    iframe.setAttribute("src",$soundcloudId.data('playlist'));
+    iframe.setAttribute("width", "100%");
+    iframe.setAttribute("height", $soundcloudHeight);
+    iframe.setAttribute("scrolling", "no");
+    iframe.setAttribute("allow", "autoplay");
+    iframe.setAttribute("frameborder", "no");
+    iframe.setAttribute("onload", "lzld(this)");
     var tag = $("#listen");
     setTimeout(function () {
         closeModal();
         btn.html(temp);
-        $('html body').animate({scrollTop: tag.offset().top},'fast');
+        $('html body').animate({scrollTop: tag.offset().top}, 'fast');
         btn.prop('disabled', false);
     }, 1000);
-}
-
+    }
+$( window ).load(function() {
+    var iframe, soundcloudIdDefLink,$soundcloudHeight,
+        $soundcloudIdDefault = $("#default_player");
+    $soundcloudHeight = $("#default_player").attr('height');
+    iframe = document.createElement("iframe");
+    $soundcloudIdDefault.append(iframe);
+    iframe.setAttribute("data-id"," ");
+    iframe.setAttribute("src", $soundcloudIdDefault.data('playlist'));
+    iframe.setAttribute("width", "100%");
+    iframe.setAttribute("scrolling", "no");
+    iframe.setAttribute("allow", "autoplay");
+    iframe.setAttribute("height", $soundcloudHeight);
+    iframe.setAttribute("frameborder", "no");
+    iframe.setAttribute("onload", "lzld(this)");
+});
 function showMenu() {
     $('.modal').modal('hide');
     $('#mobileMenu').modal('show');
@@ -351,4 +376,29 @@ function openPhotoGallery(slide_num) {
         $(document).find('#photo-'+slide_num).attr('tabindex', 0).focus();
     }, 400);
 }
+document.addEventListener("DOMContentLoaded",
+    function() {
+        var div, n,
+            v = document.getElementsByClassName("youtube-player");
+        for (n = 0; n < v.length; n++) {
+            div = document.createElement("div");
 
+            div.setAttribute("data-id", v[n].dataset.id);
+            div.innerHTML = youtubeThumb(v[n].dataset.id);
+            div.onclick = youtubeIframe;
+            v[n].appendChild(div);
+        }
+    });
+function youtubeThumb(id) {
+    var thumb = '<img src="https://img.youtube.com/vi/ID/mqdefault.jpg">',
+        play = '<div class="start-video"><img src="https://erweb.ru/wp-content/uploads/2017/09/yt_icon_rgb.png"></div>';
+    return thumb.replace("ID", id) + play;
+}
+function youtubeIframe() {
+    var iframe = document.createElement("iframe");
+    var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "1");
+    this.parentNode.replaceChild(iframe, this);
+}

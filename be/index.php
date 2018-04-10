@@ -229,7 +229,7 @@ if (empty($events)) {
                                     </p>
                                 </div>
                             </div>
-                            <button type="button" id="listen-btn-<?=$id?>" class="center-block custom-btn" onclick="openAlbumToListen('<?=$id?>');">
+                            <button type="button" id="listen-btn-<?=$id?>" class="center-block custom-btn" onclick="openAlbumToListen('<?=$id?>','<?=$.slug?>');">
                                 <?=$trans['listen']?> <span class="icon-headphone"></span>
                             </button>
                         </div>
@@ -247,12 +247,12 @@ if (empty($events)) {
                 <div class="col-lg-12 text-center">
                     <h1><?=$section['listen']?></h1>
                     <br/>
-                    <div class="soundcloud_iframe">
+                    <div class="soundcloud_div">
                         <?=$default_player?>
                     </div>
                     <div class="hidden">
                         <?php foreach ($albums as $id => $album) { ?>
-                            <div id="soundcloud-<?=$id?>"><?=str_replace('src="', ' onload="lzld(this)" data-src="', $album['soundcloud_iframe'])?></div>
+                            <div id="soundcloud-<?=$id?>"><?=str_replace('src="', ' onload="lzld(this)" data-src="', $album['soundcloud_div'])?></div>
                         <?php } ?>
                     </div>
                 </div>
@@ -450,5 +450,6 @@ if (empty($events)) {
     <script src="/js/waypoint.js"></script>
     <script src="/js/slick.min.js"></script>
     <script src="/js/custom.min.js"></script>
+
 </body>
 </html>
