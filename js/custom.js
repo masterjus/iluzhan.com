@@ -311,15 +311,15 @@ function openAlbumToListen(id) {
     var temp = btn.html();
     btn.html('<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>');
     $('.soundcloud_div').html($('#soundcloud-' + id).html());
-    var $soundcloudIdValue, iframe, $soundcloudId, soundcloudLink;
+    var $soundcloudIdValue, iframe, $soundcloudId, $soundcloudHeight;
     $soundcloudIdValue = $('.soundcloud_div').find('div').attr('id');
+    $soundcloudHeight = $('.soundcloud_div').find('div').attr('height');
     $soundcloudId = $('#' + $soundcloudIdValue);
     iframe = document.createElement("iframe");
     $soundcloudId.append(iframe);
-    soundcloudLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/ID&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true";
-    iframe.setAttribute("src", soundcloudLink.replace("ID", $soundcloudId.data('playlist')));
+    iframe.setAttribute("src",$soundcloudId.data('playlist'));
     iframe.setAttribute("width", "100%");
-    iframe.setAttribute("height", "450");
+    iframe.setAttribute("height", $soundcloudHeight);
     iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("allow", "autoplay");
     iframe.setAttribute("frameborder", "no");
@@ -333,18 +333,17 @@ function openAlbumToListen(id) {
     }, 1000);
     }
 $( window ).load(function() {
-    var iframe, soundcloudIdDefLink,
+    var iframe, soundcloudIdDefLink,$soundcloudHeight,
         $soundcloudIdDefault = $("#default_player");
+    $soundcloudHeight = $("#default_player").attr('height');
     iframe = document.createElement("iframe");
     $soundcloudIdDefault.append(iframe);
-    soundcloudIdDefLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/ID&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true";
     iframe.setAttribute("data-id"," ");
-    iframe.setAttribute("src", soundcloudIdDefLink.replace("ID", $soundcloudIdDefault.data('playlist')));
+    iframe.setAttribute("src", $soundcloudIdDefault.data('playlist'));
     iframe.setAttribute("width", "100%");
-    iframe.setAttribute("height", "450");
     iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("allow", "autoplay");
-    iframe.setAttribute("height", "450");
+    iframe.setAttribute("height", $soundcloudHeight);
     iframe.setAttribute("frameborder", "no");
     iframe.setAttribute("onload", "lzld(this)");
 });
