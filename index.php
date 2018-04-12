@@ -306,7 +306,7 @@ if (empty($events)) {
                     <div class="slick-photo">
                         <?php foreach ($photos as $key => $photo) { ?>
                             <div class="photo" onclick="openPhotoGallery('<?=$key?>')">
-                                <img id="PhotoSmall-<?=$key?>" class="photoSrc" data-photo="<?=$photo['img_sm']?>" alt="<?=$photo['title']?>" class="hvr-grow">
+                                <img id="photo-small-<?=$key?>" class="photo-src" data-photo="<?=$photo['img_sm']?>" alt="<?=$photo['title']?>" class="hvr-grow">
                             </div>
                         <?php } ?>
                     </div>
@@ -333,7 +333,7 @@ if (empty($events)) {
                             <div class="slide-content" id="photo-<?=$key?>">
                                 <h4 class="inverse"><?=$photo['title']?></h4>
                                 <p><?=($key+1)?> / <?=sizeof($photos)?></p>
-                                <img class="ImgBg" id="ImgBg-<?=$key?>" data-src="<?=$photo['img']?>" alt="<?=$photo['title']?>">
+                                <img class="img-bg" id="img-bg-<?=$key?>" data-src="<?=$photo['img']?>" alt="<?=$photo['title']?>">
                             </div>
                         </div>
                     <?php } ?>

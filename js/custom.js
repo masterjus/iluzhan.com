@@ -293,7 +293,7 @@ $(document).ready(function(){
     }
 });
 function openAlbumToListen(id) {
-    event.preventDefault()
+    event.preventDefault();
     var btn = $('#listen-btn-' + id);
     btn.prop('disabled', true);
     var temp = btn.html();
@@ -311,7 +311,6 @@ function openAlbumToListen(id) {
     iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("allow", "autoplay");
     iframe.setAttribute("frameborder", "no");
-
     var tag = $("#listen");
     setTimeout(function () {
         closeModal();
@@ -337,23 +336,22 @@ $( window ).load(function() {
         v = document.getElementsByClassName("youtube-player");
     for (n = 0; n < v.length; n++) {
         div = document.createElement("div");
-
         div.setAttribute("data-id", v[n].dataset.id);
         div.innerHTML = youtubeThumb(v[n].dataset.id);
         div.onclick = youtubeIframe;
         v[n].appendChild(div);
     }
-    imgClass = document.getElementsByClassName("ImgBg");
+    imgClass = document.getElementsByClassName("img-bg");
     for(q = 0; q < imgClass.length; q++) {
-        $img = $('#ImgBg-' + q);
+        $img = $('#img-bg-' + q);
         $imgSrc = $img.attr('data-src');
         $img.attr("src", $imgSrc);
     }
-    imgClassSmall = document.getElementsByClassName("photoSrc");
+    imgClassSmall = document.getElementsByClassName("photo-src");
     for(p = 0; p < imgClassSmall.length; p++){
-        $imgSmall = $('#PhotoSmall-' + p);
-        $imgSmallSrc = $imgSmall.attr('data-photo')
-        $imgSmall.attr("src", $imgSmallSrc)
+        $imgSmall = $('#photo-small-' + p);
+        $imgSmallSrc = $imgSmall.attr('data-photo');
+        $imgSmall.attr("src", $imgSmallSrc);
     }
 });
 function showMenu() {
