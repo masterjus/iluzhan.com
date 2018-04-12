@@ -2,20 +2,8 @@ var sticky = $(".menu").offset().top;
 var is_navbar_fixed = false;
 
 function showPage() {
-    $(".preload").fadeOut(50, function() {});
+    $(".preload").fadeOut(1, function() {});
 }
-
-function lzld(elem) {
-    var dataSrc = elem.getAttribute('data-src');
-    if (!dataSrc) {
-        return;
-    }
-    elem.setAttribute('src', dataSrc);
-    elem.onload = function() {
-        elem.removeAttribute('data-src');
-    };
-}
-
 $(window).scroll(function() {
     if(document.documentElement.clientWidth >= 1200) {
         if (window.pageYOffset >= sticky && !is_navbar_fixed) {
@@ -92,7 +80,7 @@ $(document).ready(function(){
     $('.slick-musicians').slick({
         dots: false,
         infinite: false,
-        speed: 300,
+        speed: 150,
         slidesToShow: 7,
         centerMode: false,
         appendArrows: $('.about-section .slick-arrows'),
@@ -139,7 +127,7 @@ $(document).ready(function(){
     $('.slick-albums').slick({
         dots: false,
         infinite: false,
-        speed: 300,
+        speed: 150,
         slidesToShow: 5,
         slidesToScroll: 1,
         centerMode: false,
@@ -250,7 +238,7 @@ $(document).ready(function(){
     $('.slick').slick({
         dots: false,
         infinite: false,
-        speed: 300,
+        speed: 150,
         slidesToShow: 7,
         centerMode: false,
         variableWidth: true
@@ -259,7 +247,7 @@ $(document).ready(function(){
     $('.album-modal-slick').slick({
         dots: false,
         infinite: false,
-        speed: 300,
+        speed: 150,
         slidesToShow: 1,
         responsive: [
             {
@@ -305,7 +293,7 @@ $(document).ready(function(){
     }
 });
 function openAlbumToListen(id) {
-    event.preventDefault()
+    event.preventDefault();
     var btn = $('#listen-btn-' + id);
     btn.prop('disabled', true);
     var temp = btn.html();
@@ -323,7 +311,6 @@ function openAlbumToListen(id) {
     iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("allow", "autoplay");
     iframe.setAttribute("frameborder", "no");
-    iframe.setAttribute("onload", "lzld(this)");
     var tag = $("#listen");
     setTimeout(function () {
         closeModal();
@@ -345,7 +332,27 @@ $( window ).load(function() {
     iframe.setAttribute("allow", "autoplay");
     iframe.setAttribute("height", $soundcloudHeight);
     iframe.setAttribute("frameborder", "no");
-    iframe.setAttribute("onload", "lzld(this)");
+    var div, v, n, q, p, $img, $imgSrc, imgClass, imgClassSmall, $imgSmall, $imgSmallSrc;
+        v = document.getElementsByClassName("youtube-player");
+    for (n = 0; n < v.length; n++) {
+        div = document.createElement("div");
+        div.setAttribute("data-id", v[n].dataset.id);
+        div.innerHTML = youtubeThumb(v[n].dataset.id);
+        div.onclick = youtubeIframe;
+        v[n].appendChild(div);
+    }
+    imgClass = document.getElementsByClassName("img-bg");
+    for(q = 0; q < imgClass.length; q++) {
+        $img = $('#img-bg-' + q);
+        $imgSrc = $img.attr('data-src');
+        $img.attr("src", $imgSrc);
+    }
+    imgClassSmall = document.getElementsByClassName("photo-src");
+    for(p = 0; p < imgClassSmall.length; p++){
+        $imgSmall = $('#photo-small-' + p);
+        $imgSmallSrc = $imgSmall.attr('data-photo');
+        $imgSmall.attr("src", $imgSmallSrc);
+    }
 });
 function showMenu() {
     $('.modal').modal('hide');
@@ -365,7 +372,7 @@ function openAlbumModal(slide_num) {
         if(document.documentElement.clientWidth > 768) {
             $(document).find('#albumf-'+slide_num).attr('tabindex', 0).focus();
         }
-    }, 700);
+    }, 150);
 }
 function openPhotoGallery(slide_num) {
     $('#photosCarousel').modal({backdrop: false});
@@ -376,19 +383,6 @@ function openPhotoGallery(slide_num) {
         $(document).find('#photo-'+slide_num).attr('tabindex', 0).focus();
     }, 400);
 }
-document.addEventListener("DOMContentLoaded",
-    function() {
-        var div, n,
-            v = document.getElementsByClassName("youtube-player");
-        for (n = 0; n < v.length; n++) {
-            div = document.createElement("div");
-
-            div.setAttribute("data-id", v[n].dataset.id);
-            div.innerHTML = youtubeThumb(v[n].dataset.id);
-            div.onclick = youtubeIframe;
-            v[n].appendChild(div);
-        }
-    });
 function youtubeThumb(id) {
     var thumb = '<img src="https://img.youtube.com/vi/ID/mqdefault.jpg">',
         play = '<div class="start-video"><img src="https://erweb.ru/wp-content/uploads/2017/09/yt_icon_rgb.png"></div>';
