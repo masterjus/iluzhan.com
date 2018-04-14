@@ -80,7 +80,7 @@ $(document).ready(function(){
     $('.slick-musicians').slick({
         dots: false,
         infinite: false,
-        speed: 150,
+        speed: 300,
         slidesToShow: 7,
         centerMode: false,
         appendArrows: $('.about-section .slick-arrows'),
@@ -127,7 +127,7 @@ $(document).ready(function(){
     $('.slick-albums').slick({
         dots: false,
         infinite: false,
-        speed: 150,
+        speed: 300,
         slidesToShow: 5,
         slidesToScroll: 1,
         centerMode: false,
@@ -238,7 +238,7 @@ $(document).ready(function(){
     $('.slick').slick({
         dots: false,
         infinite: false,
-        speed: 150,
+        speed: 1,
         slidesToShow: 7,
         centerMode: false,
         variableWidth: true
@@ -247,7 +247,7 @@ $(document).ready(function(){
     $('.album-modal-slick').slick({
         dots: false,
         infinite: false,
-        speed: 150,
+        speed: 1,
         slidesToShow: 1,
         responsive: [
             {
@@ -318,7 +318,7 @@ function openAlbumToListen(id) {
         $('html body').animate({scrollTop: tag.offset().top}, 'fast');
         btn.prop('disabled', false);
     }, 1000);
-    }
+}
 $( window ).load(function() {
     var iframe, soundcloudIdDefLink,$soundcloudHeight,
         $soundcloudIdDefault = $("#default_player");
@@ -333,7 +333,7 @@ $( window ).load(function() {
     iframe.setAttribute("height", $soundcloudHeight);
     iframe.setAttribute("frameborder", "no");
     var div, v, n, q, p, $img, $imgSrc, imgClass, imgClassSmall, $imgSmall, $imgSmallSrc;
-        v = document.getElementsByClassName("youtube-player");
+    v = document.getElementsByClassName("youtube-player");
     for (n = 0; n < v.length; n++) {
         div = document.createElement("div");
         div.setAttribute("data-id", v[n].dataset.id);
@@ -372,7 +372,7 @@ function openAlbumModal(slide_num) {
         if(document.documentElement.clientWidth > 768) {
             $(document).find('#albumf-'+slide_num).attr('tabindex', 0).focus();
         }
-    }, 150);
+    }, 1);
 }
 function openPhotoGallery(slide_num) {
     $('#photosCarousel').modal({backdrop: false});
