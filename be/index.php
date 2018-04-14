@@ -139,7 +139,7 @@ if (empty($events)) {
                 </div>
                 <div class="col-sm-12">
                     <div class="slick-musicians">
-                        <?php foreach ($about['musicians'] as $musician) { ?>
+                        <?php foreach ($about['musicians'] as $musician) : ?>
                             <div class="slide">
                                 <div class="musician hvr-grow <?=isset($musician['class']) ? $musician['class'] : ''?>" style="background: url('<?=$musician['img']?>') 100% 100%  no-repeat; background-size: cover;">
                                     <h3 class="inverse"><?=$musician['name']?><br/><?=$musician['surname']?></h3>
@@ -147,7 +147,7 @@ if (empty($events)) {
                                     <p><?=$musician['position']?></p>
                                 </div>
                             </div>
-                        <?php } ?>
+                       <?php endforeach; ?>
                     </div>
                     <div class="slick-arrows"></div>
                 </div>
@@ -229,7 +229,7 @@ if (empty($events)) {
                                     </p>
                                 </div>
                             </div>
-                            <button type="button" id="listen-btn-<?=$id?>" class="center-block custom-btn" onclick="openAlbumToListen('<?=$id?>','<?=$.slug?>');">
+                            <button type="button" id="listen-btn-<?=$id?>" class="center-block custom-btn" onclick="openAlbumToListen('<?=$id?>');">
                                 <?=$trans['listen']?> <span class="icon-headphone"></span>
                             </button>
                         </div>
