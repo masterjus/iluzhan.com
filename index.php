@@ -14,7 +14,7 @@ if (empty($events)) {
 
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="<?=$current_lang?>">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -441,6 +441,11 @@ if (empty($events)) {
             </div>
         </div>
     </footer>
+    <div id="google_translate_element"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'be,en', multilanguagePage: true}, 'google_translate_element');
+    }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <!-- jQuery -->
     <script src="/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->

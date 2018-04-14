@@ -7,38 +7,38 @@
  */
 $videos = [
     [
-        'title' => 'Выступ на Belsat Music Live',
-        'subtitle' => 'Эфiр ад 24.02.2018',
+        'title' => 'Выступление на Belsat Music Live',
+        'subtitle' => 'Эфир от 24.02.2018',
         'youtube_embed' => '<div class="youtube-player" data-id="sVaKZGK8IUA"></div>',
     ],
     [
-        'title' => 'Краудфандынг',
-        'subtitle' => 'Краудфандынг',
+        'title' => 'Краудфандинг',
+        'subtitle' => 'Краудфандинг',
         'youtube_embed' => '<div class="youtube-player" data-id="eUO8fVza_Rg"></div>',
     ],
     [
         'title' => 'Reset',
-        'subtitle' => 'Афiцыяльнае лiрык вiдэа',
+        'subtitle' => 'Официальное лирик видео',
         'youtube_embed' => '<div class="youtube-player" data-id="a97f83uOii4"></div>',
     ],
     [
         'title' => 'Замілаванне',
-        'subtitle' => 'TNT Club - 18.09.2016',
+        'subtitle' => 'Концерт в TNT Rock club, 18.09.2016',
         'youtube_embed' => '<div class="youtube-player" data-id="_pjF-TNtep0"></div>',
     ],
     [
         'title' => 'Не улетай',
-        'subtitle' => 'Бар "Кварэрнiк", Гомель, 07.08.2015',
+        'subtitle' => 'Бар "Квартирник", Гомель, 07.08.2015',
         'youtube_embed' => '<div class="youtube-player" data-id="2CxuPeS_Mk8"></div>',
     ],
     [
         'title' => 'Чай',
-        'subtitle' => 'Канцэрт у TNT Rock club',
+        'subtitle' => 'Концерт в TNT Rock club',
         'youtube_embed' => '<div class="youtube-player" data-id="dVcLdWdlFd0"></div>',
     ],
     [
         'title' => 'Сумасшедшая Любовь',
-        'subtitle' => 'Канцэрт у TNT Rock club 22.02.2015',
+        'subtitle' => 'Концерт в TNT Rock club, 22.02.2015',
         'youtube_embed' => '<div class="youtube-player" data-id="z8wGHRp42xU"></div>',
     ],
     [
@@ -53,17 +53,17 @@ $videos = [
     ],
     [
         'title' => 'Сустрэнь мяне (Jam)',
-        'subtitle' => 'Видэа з альбома "ВыЯВы"',
+        'subtitle' => 'Видео из альбома "ВыЯВы"',
         'youtube_embed' => '<div class="youtube-player" data-id="rMaodD1p2kw"></div>',
     ],
     [
         'title' => 'Кактэбель',
-        'subtitle' => 'Видэа з альбома "ВыЯВы"',
+        'subtitle' => 'Видео из альбома "ВыЯВы"',
         'youtube_embed' => '<div class="youtube-player" data-id="ByDJCqI9yNE"></div>',
     ],
     [
         'title' => 'Як мае быць',
-        'subtitle' => 'Видэа з альбома "ВыЯВы"',
+        'subtitle' => 'Видео из альбома "ВыЯВы"',
         'youtube_embed' => '<div class="youtube-player" data-id="8vXH4b1Wh5c"></div>',
     ],
 //  ШАБЛОН ДЛЯ ДОБАВЛЕНИЯ НОВОГО ВИДЕО
