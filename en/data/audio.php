@@ -16,7 +16,7 @@ $albums = [
         "year" => "2014",
         "img" => "/img/albums/viyavi.jpg",
         "soundcloud_div" => '<div id="viavi" height="350" data-playlist="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/47396066&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></div>',
-        "description" => "Дэбютны трыпціх гурта. Тры песні, тры малюнкі нашай рэчаіснасці ў розных ракурсах. Дыск утрымлівае жывы запіс у відэа- і аўдыё-фарматах.",
+        "description" => "Дебютный триптих группы. Три песни, три рисунка нашей реальности в разных ракурсах. Диск содержит живую запись в видео- и аудио-форматах.",
         "tracks" => ["Як мае быць", "Кактэбель", "Сустрэнь мяне (Джэм)"],
     ],
 /*    [
@@ -25,7 +25,7 @@ $albums = [
         "year" => "2015",
         "img" => "/img/albums/tatachka.jpg",
         "soundcloud_div" => '<div id="tatachka" height="600" data-playlist="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179766864&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></div>',
-        "description" => "Прадвеснік першай часткі трылогіі. Моц і пяшчота – тое, што натхняе жыццё працягвацца. Варта пачуць.",
+        "description" => "Предвестник первой части трилогии. Сила и нежность – то, что вдохновляет жизнь продолжаться. Стоит услышать.",
         "tracks" => ["Верыш", "Iльняная", "Зямлiца", "Татачка", "Маценька", "Сцяжынка"],
     ],*/
     [
@@ -34,7 +34,7 @@ $albums = [
         "year" => "2015",
         "img" => "/img/albums/ci_chuesh.jpg",
         "soundcloud_div" => '<div id="ci_chuesh" height="450" data-playlist="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179766864&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></div>',
-        "description" => "Як чуецца, так і пішацца. Як жывецца, так і граецца. Як марыцца, так і спяваецца. Што мы хацелі сказаць гэтым альбомам? Штось накшталт таго, што б сказалі вам травы ды дрэвы, птушкі ды ручаі, што стаяць, бягуць, растуць і гняздзяцца ў гэтай зямлі. Дзеці - бацькі - унукі - гэта не храналогія, гэта метафізічны стан кожнага з нас. Тут песні не пра каханне. Тут песні пра Любоў. Яны не даюць надзеі, яны мацуюць веру. Вось вам наш бесцялесны спадарожнік у вандроўцы праз будні і святы. ",
+        "description" => "Как слышится, так и пишется. Как живётся, так и играется. Как мечтается, так и поётся. Что мы хотели сказать этим альбомом? Что-то вроде того, что сказали бы вам травы и деревья, птицы и ручьи, что стоят, бегут, растут и гнездятся в этой земле. Дети – родители – внуки – это не хронология, это метафизическое состояние каждого из нас. Тут песни не про влюблённость. Тут песни про Любовь. Они не дают надежды, они крепят веру. Вот вам наш бесплотный спутник в путешествии сквозь будни и праздники.",
         "tracks" => ["Верыш", "Iльняная", "Зямлiца", "Татачка", "Маценька", "Сцяжынка"],
     ],
     [
@@ -43,7 +43,7 @@ $albums = [
         "year" => "2017",
         "img" => "/img/albums/yak_nikoli.jpg",
         "soundcloud_div" => '<div id="yak_nikoli" height="600" data-playlist="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/286555306&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></div>',
-        "description" => "Наш падарунак слухачам, каб у прыцемку гарадзкіх будняў яны маглі лішні раз адчуць рамантыку і натхненьне.",
+        "description" => "Наш подарок слушателям, - чтобы в сумраке городских будней они могли лишний раз почувствовать романтику и вдохновение.",
         "tracks" => ["Як нiколi раней"],
     ],
     [
@@ -52,10 +52,10 @@ $albums = [
         "year" => "2017",
         "img" => "/img/albums/reset.jpg",
         "soundcloud_div" => '<div id="reset" height="600" data-playlist="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331330747&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></div>',
-        "description" => "Прадвеснік другой часткі трылогіі. Жыццё пачынаецца не аднойчы. Развітанне з жывымі бывае ячшэ больш складаным, чым з памерлымі. Драматычны вальс для аптымістаў.",
+        "description" => "Предвестник второй части трилогии. Жизнь начинается не единожды. Расставание с живыми бывает более сложным, чем с умершими. Драматический вальс для оптимистов.",
         "tracks" => ["Reset"],
-    ],
 
+    ],
 
 //  ШАБЛОН ДЛЯ ДОБАВЛЕНИЯ НОВОГО АЛЬБОМА
 //    [
