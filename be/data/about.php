@@ -28,7 +28,7 @@ $about = [
             "class" => 'dark',
         ],
         [
-            "name" => "Миця",
+            "name" => "Мiця",
             "surname" => "Шацёр",
             "position" => "Барабаны",
             "img" => "/img/musicians/mitya.jpg",
