@@ -8,9 +8,9 @@
  */
 $events = [
     [
-        "title" => 'ІІ Музычны фестываль "Беларускі стыль". Клуб BACK DRAFT ROCK BAR.',
-        "day" => "27",
-        "month" => "Красавіка",
+        "title" => 'ІЛЮЖАН / VECTOR EGO / МIНIМУМ ДЫСТАНЦЫI.<br>Вялiкi канцэрт у TNT Rock Club',
+        "day" => "24",
+        "month" => "Чэрвень",
         "time" => "19:00",
     ],
 
