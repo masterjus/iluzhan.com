@@ -8,17 +8,17 @@
  */
 $photos = [
     [
-        "title" => "Автор: ADAMASOV",
+        "title" => "Автор: ADAMSOV",
         "img" => "/img/photos/6.jpg",
         "img_sm" => "/img/photos/small/6.jpg",
     ],
     [
-        "title" => "Автор: ADAMASOV",
+        "title" => "Автор: ADAMSOV",
         "img" => "/img/photos/7.jpg",
         "img_sm" => "/img/photos/small/7.jpg",
     ],
     [
-        "title" => "Автор: ADAMASOV",
+        "title" => "Автор: ADAMSOV",
         "img" => "/img/photos/8.jpg",
         "img_sm" => "/img/photos/small/8.jpg",
     ],
