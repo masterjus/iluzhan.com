@@ -224,7 +224,7 @@ if (empty($events)) {
                                             <li><?=$track?></li>
                                         <?php } ?>
                                     </ol>
-                                    <strong><?=$trans['authors']?>:</strong>
+                                    <strong><?=$trans['description']?>:</strong>
                                     <p class="description">
                                         <?=$album['description']?>
                                     </p>

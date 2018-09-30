@@ -39,7 +39,7 @@ $trans = [
     'more' => 'Чытаць далей',
     'warning' => 'Увага',
     'download' => 'Спампаваць',
-    'authors' => 'Аўтары',
+    'description' => 'Апiсанне',
     'forward' => 'Уперад',
     'backward' => 'Назад',
 ];
