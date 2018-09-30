@@ -15,7 +15,7 @@ $albums = [
         "slug" => "tolki_razam",
         "year" => "2018",
         "img" => "/img/albums/tolki_razam.jpg",
-        "soundcloud_div" => '<div id="reset" height="500" data-playlist="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/605519262&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true""></div>',
+        "soundcloud_div" => '<div id="tolki_razam" height="500" data-playlist="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/605519262&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true""></div>',
         "description" => "Галіны магутнага Дрэва Музыкі пераплятаюцца і цягнуцца да Святла ў самых невыказных спалучэннях.<br> Так і мы з вамі - засмучоныя, апантаныя, лагодныя, зачараваныя - кіруемся да Сутворчасці і Цудаў. Толькі ў гармоніі. Толькі разам.",
         "tracks" => ["Сустрэнь мяне", 'Рэсэт', 'Дотык', 'Лёсе', 'Замiлаванне', 'Сумасшедшая любовь', 'Не улетай', 'Сонца', 'Чай'],
     ],
