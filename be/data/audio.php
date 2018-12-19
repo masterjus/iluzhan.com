@@ -11,6 +11,15 @@
  */
 $albums = [
     [
+        "title" => "Баранi, Божа",
+        "slug" => "barani_bozha",
+        "year" => "2018",
+        "img" => "/img/albums/barani_bozha.jpg",
+        "soundcloud_div" => '<div id="barani_bozha" height="600" data-playlist="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/544764828&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></div>',
+        "description" => "\"Барані, Божа\" ці \"Бронь, Божа\" можна было часта пачуць ад старэйшых у выпадках, калі размова ішла аб нечым небяспечным. На гэтай падставе склалася песня аб тым, наколькі важна берагчы і шанаваць чуйнасць людзей - і не толькі маленькіх - але і ў любым узросце, бо моцны стрэс і знявага накладаюць адбітак на ўсё далейшае жыццё, і часам бывае вельмі цяжка пасля пазбавіцца ад гэтых ня бачных вокам шнараў. Такім чынам, \"Барані, Божа\" - наш заклік шанаваць чуйнасць і чуллівасць адзін аднога.",
+        "tracks" => ['Баранi, Божа'],
+    ],
+    [
         "title" => "Толькi разам",
         "slug" => "tolki_razam",
         "year" => "2018",
